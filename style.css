@@ -1,12 +1,12 @@
-body{
+#body{
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     overflow-x: hidden;
-    /* background: black; */
-    background: linear-gradient(90deg, rgba(0,41,69,1) 6%, rgba(53,0,56) 29%, rgba(7,33,71,1) 84%);
+    background-color: black;
+    /* background: linear-gradient(90deg, rgba(0,41,69,1) 6%, rgba(53,0,56) 29%, rgba(7,33,71,1) 84%); */
 }
-.container{
+/* .container{
     width: 100%;
     height: 100%;
     position: relative;
@@ -14,7 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     perspective: 50px;
-}
+} */
 .frame{
     width: 500px;
     height: 500px;
@@ -76,24 +76,32 @@ body{
     100% {filter: brightness(1.5) contrast(3);}
 }
 
-section{
+/* section{
     background-color: rgba(255,255,255,0.4);
-    border: 1px solid rgba(255,255,255,0.25);
-    width: 1366px;
+    border: 1px solid rgba(255,255,255,0.25); 
+     width: 1366px; 
     height: 500px;
     margin-left: 1px;
     border-radius: 10px;
     z-index: 999;
     margin-top: -50px;
     
-}
-img{
+} */
+/* img{
     z-index: 999;
     width: 250px;
-    height: 250px;
-    border-radius: 10px;
+    height: 250px; 
+     border-radius: 50%; 
+    height: 350px;
+    max-width: 350px;
+    background-color: rgba(255,255,255,0.4);
+    
+} */
+.profilepic{
+    /* width: 200px;
+    height: 500px; */
+    border-radius: 50%;
 }
-
 .nav-item{
     margin-left: 130px;
 }
@@ -102,23 +110,180 @@ nav{
     position: fixed;
     z-index: 999;
 }
-.intro{
-    position: absolute;
-    top: 50%;
-    right: 40%;
-    transform: translateY(-50%);
-}
+/* .intro{
+    margin-top: 100px;
+} */
 .changingText::before{
     content: '';
-    color: white;
+    color: #0077b5;
     animation: animate infinite 8s;
 }
 @keyframes animate{
-    0%{ content: 'Full Stack';}
-    70%{ content: 'Back-end';}
-    100%{ content: 'Front-end';}
+    0%{ content: 'Full Stack'; color: lightgreen;}
+    33.33%{ content: 'Back-end'; color: aqua;}
+    66.66%{ content: 'Front-end'; color: yellow;}
+    100%{content: 'Software Dev'; color: red;}
 }
 .intro1{
     display: inline-block;
     margin-left: 450px;
+}
+
+.intro{
+    color: white;
+}
+.clearfix{
+    margin-top: 30px;
+    width: auto;
+    background: black;
+    /* background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.25); */
+}
+#card
+{
+    /* width: 100vw;
+    height: 100vh; */
+    /* margin-top: 160px; */
+    background: transparent;
+}
+
+.card-body{
+    color: white;
+}
+#linkedin{
+    margin-top: 30px;
+    transform: scale(2.5);
+}
+#linkedin:hover{
+    color: #0077b5;
+    cursor: pointer;
+}
+#homeSection{
+    /* position: relative;
+    top: 180px; */
+    /* margin-top: 180px; */
+    width: 100vw;
+    height: 100vh;
+    
+}
+.wrapper{
+    margin-top: 130px;
+}
+
+#education{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.wrapper1{
+    margin-top: 100px;
+    
+}
+.card{
+    height: 300px;
+}
+.uni-card{
+    color: black;
+}
+.edu-body{
+    margin-top: 40px;
+    justify-content: center;
+    
+
+}
+.edu{
+    text-align: center;
+    color: white;
+}
+
+.bottom-bar{
+    margin-top: 30px;
+}
+.skills{
+    text-align: center;
+    color: white;
+}
+.html{
+    color: black;
+    text-align: center;
+}
+
+.skills-card{
+    height: 380px;
+}
+
+#skills{
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper2{
+    margin-top: 55px;
+}
+#projects{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.wrapper3{
+    margin-top: 80px;
+}
+
+.projects{
+    color: white;
+    text-align: center;
+}
+
+#connect{
+    width: 100vw;
+    height: 100vh;
+
+}
+.connect{
+    color: white;
+    text-align: center;
+}
+
+.proj{
+    margin: 10px;
+}
+.wrapper4{
+    margin-top: 60px;
+}
+
+.connectcard{
+    display: inline-block;
+}
+
+.connectfields{
+    color: black;
+}
+#email{
+    color: orange;
+    
+    transform: scale(4.5);
+}
+
+#github{
+    transform: scale(4.5);
+    color: white;
+}
+#linkedIn{
+    transform: scale(4.5);
+    color: #0077b5;
+}
+.icon{
+    margin: 200px;
+}
+.bar{
+    margin-top: -10px;
+}
+.project-topic{
+    color: white;
+}
+#git{
+    margin-top: 40px;
+    margin-left: 120px;
+    
+    transform: scale(3.5);
 }
