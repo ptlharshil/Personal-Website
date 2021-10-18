@@ -113,6 +113,14 @@
         margin-left: -35px;
         margin-right: 50px;
     }
+    .about-img{
+        position: absolute;
+        top: 160px;
+    }
+    .about{
+        z-index: 999;
+    }
+    
    
 }
 
@@ -124,6 +132,15 @@
     }
     #box1::after{
         margin-left: -250px;
+    }
+    .about-img{
+        position: absolute;
+        
+        top: 120px;
+        
+    }
+    .about{
+        z-index: 999;
     }
 }
 
@@ -145,7 +162,7 @@
     border-radius: 50%;
 }
 .nav-item{
-    margin-left: 130px;
+    margin-left: 110px;
 }
 
 nav{
@@ -160,10 +177,10 @@ nav{
     animation: animate infinite 8s;
 }
 @keyframes animate{
-    0%{ content: 'Full Stack'; color: lightgreen;}
-    33.33%{ content: 'Back-end'; color: aqua;}
-    66.66%{ content: 'Front-end'; color: yellow;}
-    100%{content: 'Software Dev'; color: red;}
+    0%{ content: 'Full Stack'; }
+    50%{ content: 'Back-end'; }
+    100%{ content: 'Front-end';}
+    
 }
 .intro1{
     display: inline-block;
@@ -381,4 +398,21 @@ nav{
 
 .grp{
     background: black;
+}
+
+.about{
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+    margin-top: 50px;    
+   
+}
+
+.about-img
+{
+    margin-top: 45px;
+}
+.about-body{
+    margin-top: 20px;
 }
